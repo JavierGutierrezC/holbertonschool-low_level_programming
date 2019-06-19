@@ -9,7 +9,7 @@ int main(void)
 	char caracter;
 	int integro;
 	long int longint;
-	long long int llonont;
+	long long int llongint;
 	float decimal:
 		printf("size of a char: %ld byte(s)\n", sizeof(caracter));
 		printf("size of a int: %ld byte(s)\n", sizeof(integro));
