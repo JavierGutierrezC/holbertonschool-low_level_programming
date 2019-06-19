@@ -13,8 +13,8 @@ int main(void)
 	float decimal;
 
 	printf("size of a char: %ld byte(s)\n", sizeof(caracter));
-	printf("size of a int: %ld byte(s)\n", sizeof(integro));
-	printf("size of an long int: %ld byte(s)\n", sizeof(longint));
+	printf("size of an int: %ld byte(s)\n", sizeof(integro));
+	printf("size of a long int: %ld byte(s)\n", sizeof(longint));
 	printf("size of a long long int: %ld bytes(s)\n", sizeof(llongint));
 	printf("size of a float: %ld bytes(s)\n", sizeof(decimal));
 	return (0);
