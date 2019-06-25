@@ -1,9 +1,9 @@
 #include "holberton.h"
 /**
- * _islower - checks for lower case letters.
+ * _isalpha - checks for lower case letters.
  * @c: checks to see if char is lower case
  *
- * Return: Always 0
+ * Return: 1 if it is true and 0 if it is false
  */
 
 int _isalpha(int c)
