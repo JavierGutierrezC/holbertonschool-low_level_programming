@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * main - check the code for Holberton School students.
+ * print_alphabet - writes alphabet in lower case from a to z.
  *
  * Return: Always 0.
  */
