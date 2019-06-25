@@ -1,23 +1,26 @@
 #include "holberton.h"
+
 /**
- * void print_alphabet_x10 - print alphbet 10 times
+ * print_alphabet_x10 - writes the alphabet between a to z in 5 lines.
  *
  *
- * Description: print alphbet 10 times
- *
- * Return: No return void function
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
  */
 void print_alphabet_x10(void)
 {
-	int i;
-	int u;
+	int a2 = 0;
 
-	for (u = 0; u <= 9; u++)
+	while (a2 < 10)
 	{
-		for (i = 'a'; i <= 'z'; i++)
+		char a = 'a';
+
+		while (a <= 'z')
 		{
-			_putchar(i);
+			_putchar(a);
+			a = a + 1;
 		}
 		_putchar('\n');
+		a2 = a2 + 1;
 	}
 }
