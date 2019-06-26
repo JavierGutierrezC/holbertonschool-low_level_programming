@@ -1,11 +1,11 @@
 #include "holberton.h"
+#include "holberton.h"
 /**
- * print_last_digit - this will print the last digit of the number
- * @n: integer to use
+ * print_last_digit - return alas digit or a int.
  *
- * Print last number
- *
- * Return is the same as the integer
+ * @n: the caracter that receive and return
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
  */
 int print_last_digit(int n)
 {
