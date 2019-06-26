@@ -7,8 +7,6 @@
  *
  * Return is the same as the integer
  */
-
-
 int print_last_digit(int n)
 
 {
