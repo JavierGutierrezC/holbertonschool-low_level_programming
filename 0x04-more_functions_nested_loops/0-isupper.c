@@ -2,7 +2,7 @@
 
 /**
  * _isupper - used to select characters that are leters in uppercase.
- *
+ * @c is the variable that is going to be evaluated.
  * Return: - if it is an uppercase letter reurn is 1 if not it is 0.
  */
 
