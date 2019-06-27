@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include <stdio.h>
 /**
  * _isupper - used to select characters that are leters in uppercase.
  *
