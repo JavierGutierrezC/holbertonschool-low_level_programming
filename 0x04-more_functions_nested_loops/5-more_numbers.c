@@ -15,13 +15,13 @@ void more_numbers(void)
 	{
 		for (ans = 0; ans <= 14; ans++)
 		{
-			if(ans > 9 && ans <= 14)
-			{ imp=(( ans % 10) + '0');
-			        _putchar('1');
+			if (ans > 9 && ans <= 14)
+			{ imp = ((ans % 10) + '0');
+			  _putchar('1');
 			}
 			else
 			{
-				imp=(ans + '0');
+				imp = (ans + '0');
 			}
 			_putchar(imp);
 }
