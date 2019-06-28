@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /**
- * main - function wich will print the numbers asked in the statement
- * Reurn: 0 if true
+ * main - will print all numbers and words
+ * Return: if 0 zero then it is true
  */
 
 int main(void)
