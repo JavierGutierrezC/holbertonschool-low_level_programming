@@ -7,19 +7,19 @@
 
 int main(void)
 {
-	int a;
+	int x;
 
-	for (a = 1; a <= 100; a++)
+	for (x = 1; x <= 100; x++)
 	{
-		if ((a % 3 == 0) && (a % 5 != 0))
+		if ((x % 3 == 0) && (x % 5 != 0))
 			printf("Fizz ");
-		if ((a % 3 != 0) && (a % 5 == 0) && (a != 100))
+		if ((x % 3 != 0) && (x % 5 == 0) && (x != 100))
 			printf("Buzz ");
-		if ((a % 3 == 0) && (a % 5 == 0))
+		if ((x % 3 == 0) && (x % 5 == 0))
 			printf("FizzBuzz ");
-		if ((a % 3 != 0) && (a % 5 != 0))
-			printf("%d ", a);
-		if ((a % 3 != 0) && (a % 5 == 0) && (a == 100))
+		if ((x % 3 != 0) && (x % 5 != 0))
+			printf("%d ", x);
+		if ((x % 3 != 0) && (x % 5 == 0) && (x == 100))
 			printf("Buzz");
 	}
 	printf("\n");
