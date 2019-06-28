@@ -3,6 +3,7 @@
 /**
  * print_line - print a character in a cascade shape
  *
+ * @n: times the lines will repeat
  *
  */
 
