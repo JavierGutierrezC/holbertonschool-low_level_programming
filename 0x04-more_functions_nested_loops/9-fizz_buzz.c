@@ -2,7 +2,6 @@
 
 /**
  * main - function wich will print the numbers asked in the statement
- *
  * Reurn: 0 if true
  */
 
