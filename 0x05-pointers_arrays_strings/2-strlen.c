@@ -2,11 +2,12 @@
 
 /**
  * _strlen - used to count the lenght of the string
- * @n: variable that is going to do the counting
+ *
  * @s: pointer of the char to be counted
- * return: It returns the lenght of the string
+ * Return: It returns the lenght of the string
 */
 int _strlen(char *s)
+
 {
 	int n;
 
