@@ -1,0 +1,1 @@
+Readme file for more and more pointers strings and arrays.
