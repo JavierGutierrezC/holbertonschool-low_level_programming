@@ -1,8 +1,5 @@
 #include <stdio.h>
-/**
- * main - main number to print
- * Return: is cero
- */
+
 int main(void)
 {
 	int n;
