@@ -1,0 +1,26 @@
+#include "holberton.h"
+#include <stdio.h>
+/**
+ *
+ *
+ *
+ *
+ */
+void print_diagsums(int *a, int size)
+{
+	int x;
+	int sum;
+
+	sum = 0;
+	for (x = 0; x < size; x++)
+	{
+		sum += *(a + (size * x) + x);
+	}
+	printf("%d, ", sum);
+	sum = 0;
+	for (x = size; x > 0; x--)
+	{
+		sum += *(a + (size * x) - x);
+	}
+	printf("%d\n", sum);
+}
