@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include <stdio.h>
 /**
  * leet - Encodes the array
  * @arr: Array to switch
@@ -7,9 +6,7 @@
  *
  */
 char *leet(char *arr)
-/*int main ()*/
 {
-	/*char arr[] = "Expect the best. Prepare for the worst. Capitalize on what comes.\n";*/
 	int x;
 	int y;
 	char letr[10] = {'a', 'e', 'o', 't', 'l', 'A', 'E', 'O', 'T', 'L'};
@@ -26,5 +23,4 @@ char *leet(char *arr)
 	}
 	}
 	return (arr);
-	/*printf("%s",arr);*/
 }
