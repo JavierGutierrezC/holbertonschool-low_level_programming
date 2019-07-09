@@ -16,9 +16,16 @@ char *_strchr(char *s, char c)
 	{
 		if (s[x] == c)
 		{
-			return (s + x);
+			return (s = s + x);
 		}
 
 	}
-	return (NULL);
+	if (s[x] == '\0' && c == '\0')
+	{
+		return (s = s + x);
+	}
+	else
+	{
+		return (NULL);
+	}
 }
