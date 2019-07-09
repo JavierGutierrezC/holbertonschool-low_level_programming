@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include <stdlib.h>
 /**
  * _strchr - returns a pointer  to the first occurance
  * @s: char pointer to print
@@ -15,8 +16,9 @@ char *_strchr(char *s, char c)
 	{
 		if (s[x] == c)
 		{
-			return (&s[x]);
+			return (s + x);
 		}
+
 	}
-	return ('\0');
+	return (NULL);
 }
