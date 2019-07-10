@@ -1,31 +1,24 @@
 #include "holberton.h"
-#include <stdlib.h>
+#include <stdio.h>
 /**
- * _strpbrk - returns a pointer  to the first occurance
- * @s: char pointer to print
+ * _strpbrk - returns a pointer for a set of bytes
+ * @s: pointer
  * @accept: char to print
  *
- * Return: is zero
+ * Return: is null
  *
  */
 char *_strpbrk(char *s, char *accept)
 {
 	int x;
+	int y;
 
-	for (x = 0; s[x] != '\0'; x++)
+	for (x = 0; s[x]; x++)
 	{
-		if (s[x] == c)
-		{
-			return (s = s + x);
-		}
+	for (y = 0; accept[y]; y++)
+		if (s[x] == accept[y])
+			return (s + x);
+	}
+	return (NULL);
 
-	}
-	if (s[x] == '\0' && c == '\0')
-	{
-		return (s = s + x);
-	}
-	else
-	{
-		return (NULL);
-	}
 }
