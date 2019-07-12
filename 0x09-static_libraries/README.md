@@ -1,0 +1,1 @@
+This readme file while is for static libraries
