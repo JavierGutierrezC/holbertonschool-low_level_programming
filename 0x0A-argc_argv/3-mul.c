@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * main - prints the name of the file
+ * main - prints the multiplication of two numbers
  * @argc: count the string
- * @argv: string
- * @x:
- * Return: prints the name
+ * @argv: string of characters
+ *
+ * Return: is 0
  */
 int main(int argc, char *argv[])
 {
@@ -21,5 +21,5 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-	return(0);
+	return (0);
 }
