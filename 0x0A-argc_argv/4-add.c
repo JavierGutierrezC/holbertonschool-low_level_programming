@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 	}
 	if (argc > 1)
 {
-		for(x =1; x < argc; x++)
+		for (x = 1; x < argc; x++)
 			numb = atoi(argc[x]);
 		if ((numb == 0 && *argv[x] == '0') || numb > 0)
 		{
@@ -31,13 +31,13 @@ int main(int argc, char *argv[])
 			puts("Error");
 			return (1);
 		}
-}
+		{
 		printf("%d\n", add);
-		}
+		{
 else
-{
+	}
 	printf("Error\n");
-		return(1);
-}
-return(0);
+		return (1);
+		{
+return (0);
 }
