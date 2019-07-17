@@ -2,10 +2,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- *
- *
- *
- *
+ * str_concat - concatenate 2 strings
+ * @s1: string 1
+ * @s2: string 2
+ * Return: NULL on error
  */
 char *str_concat(char *s1, char *s2)
 {
@@ -17,13 +17,13 @@ char *str_concat(char *s1, char *s2)
 
 	if (s1 != NULL)
 	{
-		for (x = 0; s1[x] != '\0';x++)
+		for (x = 0; s1[x] != '\0'; x++)
 		{
 		}
 	}
 	if (s2 != NULL)
 	{
-		for (y = 0; s2[y] != '\0';y++)
+		for (y = 0; s2[y] != '\0'; y++)
 		{
 		}
 	}
@@ -32,7 +32,7 @@ char *str_concat(char *s1, char *s2)
 		{
 			return (NULL);
 		}
-		for (z = 0; z < x + y;z++)
+		for (z = 0; z < x + y; z++)
 		{
 			if (z < x)
 			{
@@ -45,4 +45,4 @@ char *str_concat(char *s1, char *s2)
 			}
 		}
 		return (S);
-	 }
+}
