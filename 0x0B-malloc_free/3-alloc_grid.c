@@ -4,7 +4,7 @@
 /**
  * alloc_grid - returns a pointer to a 2 dimensional array
  * @width: width if the array
- * Qheight: height of the array
+ * @height: height of the array
  * Return: NULL on failure
  */
 int **alloc_grid(int width, int height)
@@ -30,7 +30,7 @@ int **alloc_grid(int width, int height)
 
 		if (!z[x])
 		{
-	for (x = 0; x >= 0; x--);
+			for (x = 0; x >= 0; x--);
 
 			{
 				free(z[x]);
