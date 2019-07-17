@@ -1,29 +1,30 @@
-#include <holberton.h>
+#include "holberton.h"
 #include <stdio.h>
+#include <stdlib.h>
 /**
+ * create_array - Function to create an array
+ * @size: integer, lenght of the string
+ * @c: Character
  *
- *
- *
- *
- *
+ * Return: NULL if 0 or to pointer in array
  */
 char *create_array(unsigned int size, char c)
 {
 	char *x;
 	unsigned int y;
 
-	x= malloc(size * sizeof(*s));
-	if (x = NULL)
+	x = malloc(size * sizeof(*x));
+	if (x == NULL)
 	{
-		return(NUll);
+		return (NULL);
 	}
-	if (size =0)
+	if (size == 0)
 	{
-		return(NULL);
+		return (NULL);
 	}
-	for ( i = 0; y < size; i++)
+	for (y = 0; y < size; y++)
 	{
-		x[y] =c;
+		x[y] = c;
 	}
 	return (x);
 }
