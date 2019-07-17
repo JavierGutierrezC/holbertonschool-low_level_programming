@@ -40,6 +40,7 @@ char *str_concat(char *s1, char *s2)
 			else
 			{
 				S[c] = s2[s2[z];
+					  w++;
 			}
 		}
 			return (S);
