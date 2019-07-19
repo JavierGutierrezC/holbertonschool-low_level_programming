@@ -2,10 +2,10 @@
 #include <string.h>
 #include <stdlib.h>
 /**
- *
- *
- *
- *
+ *_calloc - Allocates memeory for an array
+ * @nmemb: Elements of array
+ * @size: Size of array
+ * Return: Return pinter to memory
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
