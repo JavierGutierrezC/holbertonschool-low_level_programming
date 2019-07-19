@@ -15,7 +15,7 @@ int *array_range(int min, int max)
 	int y;
 	int z;
 
-	z = (max -min);
+	z = (max - min);
 
 	if (min > max)
 	{
