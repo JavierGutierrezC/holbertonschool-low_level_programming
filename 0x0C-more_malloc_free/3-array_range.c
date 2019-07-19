@@ -24,9 +24,9 @@ int *array_range(int min, int max)
 	{
 		return (NULL);
 	}
-	for (y = 0; min <= max; y++, min++)
+	for (y = 0; y <= z; y++)
 	{
-		x[y] = min;
+		x[y] = min++;
 	}
 	return (x);
 }
