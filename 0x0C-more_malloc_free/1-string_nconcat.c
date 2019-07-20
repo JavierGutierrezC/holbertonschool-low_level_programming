@@ -3,10 +3,11 @@
 #include <stdio.h>
 
 /**
- *
- *
- *
- *
+ * string_nconcat - concatenate 2 strings
+ * @s1: character of string 1
+ * @s2: character of strin 2
+ * @n : integer bytes
+ * Return:
  */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
@@ -43,13 +44,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	return (NULL);
 	}
 	for (w = 0; w < y; w++)
-	{
 		*(x + w) = *(s1 + w);
-	}
+
 	for (q = 0; q < z && q < n; w++, q++)
-	
 		*(x + w) = *(s2 + q);
 		*(x + w) = '\0';
 
-	return(x);
+	return (x);
 }
