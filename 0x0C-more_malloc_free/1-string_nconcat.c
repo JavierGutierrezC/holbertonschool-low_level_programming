@@ -25,14 +25,31 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (s2 == NULL)
 		s2 = "";
 
-	for (y = 0; *(x1 + y); y++)
+	for (y = 0; *(s1 + y); y++)
 		;
-	for (z = 0; *(x2 + z); z++)
+	for (z = 0; *(s2 + z); z++)
 		;
 	z++;
 	if (n > z)
+	{
 		x = malloc((y + z) * sizeof(*x));
+	}
 	else
-		s = malloc((y + n + 1) *sizeof(*x));
+	{
+		x = malloc((y + n + 1) * sizeof(*x));
+	}
 	if (x == NULL)
-		return (NULL);
+	{
+	return (NULL);
+	}
+	for (w = 0; w < y; w++)
+	{
+		*(x + w) = *(s1 + w);
+	}
+	for (q = 0; q < z && q < n; w++, q++)
+	
+		*(x + w) = *(s2 + q);
+		*(x + w) = '\0';
+
+	return(x);
+}
