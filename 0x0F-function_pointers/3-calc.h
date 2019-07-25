@@ -1,9 +1,15 @@
-#ifndef _CALC_H_
-#define _CALC_H_
+#ifndef _3_CALC_H_
+#define _3_CALC_H_
 
 #include <stdlib.h>
 #include <stdio.h>
 
+/**
+ * struct op - function
+ * @op: pointer
+ * @f: pointer of function
+ *
+ */
 typedef struct op
 {
 	char *op;
