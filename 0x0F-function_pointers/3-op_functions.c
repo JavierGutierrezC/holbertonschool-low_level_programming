@@ -6,7 +6,7 @@
  * @b: variable
  * Return: addition of variables
  */
-int op_add(int a, int b);
+int op_add(int a, int b)
 {
 	return (a + b);
 }
@@ -17,7 +17,7 @@ int op_add(int a, int b);
  * @b: Variable
  * Return: Substraction of variables
  */
-int op_sub(int a, int b);
+int op_sub(int a, int b)
 {
 	return (a - b);
 }
@@ -28,7 +28,7 @@ int op_sub(int a, int b);
  * @b: Varaible
  * Return: Multiply variables
  */
-int op_mul(int a, int b);
+int op_mul(int a, int b)
 {
 	return (a * b);
 }
@@ -39,7 +39,7 @@ int op_mul(int a, int b);
  * @b: Variable
  * Return: divide variables
  */
-int op_div(int a, int b);
+int op_div(int a, int b)
 {
 	if (b == 0)
 	{
@@ -55,12 +55,12 @@ int op_div(int a, int b);
  * @b: Variable
  * Return: mod of varaibles
  */
-int op_mod(int a, int b);
+int op_mod(int a, int b)
 {
 	if (b == 0)
 	{
 		printf("Error\n");
-		exit(100);
+		exit(99);
 	}
 	return (a % b);
 }
