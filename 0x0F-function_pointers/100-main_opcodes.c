@@ -10,7 +10,7 @@ int main(int argc, char *argv[])
 {
 	if (argc != 2)
 	{
-		printf("Error?n");
+		printf("Error\n");
 		exit(1);
 	}
 	if (atoi(arggv[1]) < 0)
