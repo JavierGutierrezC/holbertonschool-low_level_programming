@@ -16,11 +16,11 @@ int main(int argc, char *argv[])
 	char z = *argv[2];
 
 	if (argc != 4)
-
+	{
 		printf("Error\n");
 		exit(98);
-
-		if ((z != '+') && (z != '-') && (z != '*') && (z != '/') && (z != '%'))
+	}
+		if (z != '+' && z != '-' && z != '*' && z != '/' && z != '%')
 
 		{
 			printf("Error\n");
