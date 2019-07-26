@@ -1,37 +1,36 @@
-#include "calc.h"
+#include "3-calc.h"
 #include <stdlib.h>
 #include <stdio.h>
 
 /**
- * main - mainfunction
+ * main - main function collects all other functions
  * @argc: int
  * @argv: char
- * Reurn: zero
+ * Return: zero
  */
 
 int main(int argc, char *argv[])
 {
 	int x;
 	int y;
+	char z = *argv[2];
 
 	if (argc != 4)
-	{
+
 		printf("Error\n");
 		exit(98);
-	}
-		if (argv[2][0] == '+' || argv [2][0] == '-' || argv [2][0] == '*' || argv[2][] == '/' || argv[2][0] =='%')
+
+		if ((z != '+') && (z != '-') && (z != '*') && (z != '/') && (z != '%'))
+
 		{
 			printf("Error\n");
-			exit(99);
+			exit(97);
 		}
-		x = atoi(argv[1]);
-		y = atoi(argv[3]);
-		if (argv[2][1] != '\0')
+		if (argv[2][1] == '\0')
 		{
-			printf("Error\n")
-				exit(99);
+			x = atoi(argv[1]);
+			y = atoi(argv[3]);
+			printf("%d\n", (get_op_func(argv[2]))(x, y));
 		}
-		printf("%d\n", (get_op_func(argv[2]))(x,y));
-
 		return (0);
 }
