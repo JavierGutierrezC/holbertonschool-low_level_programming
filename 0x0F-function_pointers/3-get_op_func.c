@@ -2,11 +2,10 @@
 #include <stdlib.h>
 /**
  * get_op_func - recalls a function from op functions
- * @s is a pointer that points to char
+ * @s: is a pointer that points to char
  * Return: NULL if not any of the functions
- *
  */
-int (*get_op_func(char *s))(int, int);
+int (*get_op_func(char *s))(int, int)
 {
 
 	op_t ops[] = {
@@ -19,14 +18,15 @@ int (*get_op_func(char *s))(int, int);
 	};
 	int i = 0;
 
+	while (i < 6)
 
-	while (ops[i].op) != NULL)
+	{
 
-{
-
-	if (ops[i].op[0] == s[0])
-		return (ops[i].f);
-	i++;
-}
-return (NULL);
+		if (ops[i].op[0] == s[0])
+		{
+			return (ops[i].f);
+		}
+		i++;
+	}
+	return (NULL);
 }
