@@ -36,12 +36,10 @@ void print_all(const char * const format, ...)
 			{
 				printf("(nil)");
 				y = 1;
-			}
 			break;
-			{
+			}
 				printf("%s", s);
 				y = 1;
-			}
 			break;
 		}
 		if (format[x + 1] != 0 && y == 1)
@@ -49,6 +47,6 @@ void print_all(const char * const format, ...)
 		x++;
 		y = 0;
 	}
-	printf("\n");
 	va_end(valist);
+printf("\n");
 }
