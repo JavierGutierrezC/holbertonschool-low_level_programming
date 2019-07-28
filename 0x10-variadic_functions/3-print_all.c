@@ -9,22 +9,25 @@
 void print_all(const char * const format, ...)
 {
 	va_list valist;
-	unsigned int i = 0;
+	unsigned int x = 0, y = 1;
 	char *s;
 
 	va_start(valist, format);
-	while (format && format[i])
+	while (format && format[x])
 	{
-		switch (format[i])
+		switch (format[x])
 		{
 		case 'c':
 			printf("%c", ((char)va_arg(valist, int)));
+			y = 1;
 			break;
 		case 'i':
 			printf("%i", (va_arg(valist, int)));
+			y = 1;
 			break;
 		case 'f':
 			printf("%f", (va_arg(valist, double)));
+			y = 1;
 			break;
 		case 's':
 			s = va_arg(valist, char *);
@@ -37,13 +40,11 @@ void print_all(const char * const format, ...)
 				printf("%s", s);
 			}
 			break;
-		default:
-			i++;
-			continue;
 		}
-		if (format[i + 1] != '\0')
+		if (format[x + 1] != 0 && y == 1)
 			printf(", ");
-		i++;
+		x++;
+		y = 0;
 	}
 	printf("\n");
 	va_end(valist);
