@@ -9,7 +9,7 @@
 void print_all(const char * const format, ...)
 {
 	va_list valist;
-	unsigned int x = 0, y = 1;
+	unsigned int x = 0, y = 0;
 	char *s;
 
 	va_start(valist, format);
