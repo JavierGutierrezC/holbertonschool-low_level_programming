@@ -9,7 +9,7 @@
 void print_all(const char * const format, ...)
 {
 	va_list valist;
-	unsigned int x = 0, y = 0;
+	int x = 0, y = 0;
 	char *s;
 
 	va_start(valist, format);
@@ -18,15 +18,15 @@ void print_all(const char * const format, ...)
 		switch (format[x])
 		{
 		case 'c':
-			printf("%c", ((char)va_arg(valist, int)));
+			printf("%c", (char)va_arg(valist, int));
 			y = 1;
 			break;
 		case 'i':
-			printf("%i", (va_arg(valist, int)));
+			printf("%i", va_arg(valist, int));
 			y = 1;
 			break;
 		case 'f':
-			printf("%f", (va_arg(valist, double)));
+			printf("%f", (float)va_arg(valist, double));
 			y = 1;
 			break;
 		case 's':
@@ -34,10 +34,12 @@ void print_all(const char * const format, ...)
 			if (s == NULL)
 			{
 				printf("(nil)");
+				y = 1;
 			}
 			else
 			{
 				printf("%s", s);
+				y = 1;
 			}
 			break;
 		}
