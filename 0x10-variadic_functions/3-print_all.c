@@ -9,7 +9,8 @@
 void print_all(const char * const format, ...)
 {
 	va_list valist;
-	int x = 0, y = 0;
+	int x = 0;
+	int y = 0;
 	char *s;
 
 	va_start(valist, format);
@@ -36,7 +37,7 @@ void print_all(const char * const format, ...)
 				printf("(nil)");
 				y = 1;
 			}
-			else
+			break;
 			{
 				printf("%s", s);
 				y = 1;
