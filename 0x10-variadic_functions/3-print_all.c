@@ -9,13 +9,13 @@
 void print_all(const char * const format, ...)
 {
 	va_list valist;
-	unsigned int x = 0;
+	unsigned int i = 0;
 	char *s;
 
 	va_start(valist, format);
-	while (format && format[x])
+	while (format && format[i])
 	{
-		switch (format[x])
+		switch (format[i])
 		{
 		case 'c':
 			printf("%c", ((char)va_arg(valist, int)));
@@ -38,12 +38,12 @@ void print_all(const char * const format, ...)
 			}
 			break;
 		default:
-			x++;
+			i++;
 			continue;
 		}
-		if (format[x + 1] != '\0')
+		if (format[i + 1] != '\0')
 			printf(", ");
-		x++;
+		i++;
 	}
 	printf("\n");
 	va_end(valist);
