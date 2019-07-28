@@ -19,12 +19,11 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	{
 		y = va_arg(objects, char *);
 		if (y == NULL)
-			y = "(nil)";
-		{
+			printf("(nil)");
+		else
 			printf("%s", y);
-		}
 		if (x < (n - 1) && separator != NULL)
-		    printf("%s", separator);
+			printf("%s", separator);
 	}
 		printf("\n");
 		va_end(objects);
