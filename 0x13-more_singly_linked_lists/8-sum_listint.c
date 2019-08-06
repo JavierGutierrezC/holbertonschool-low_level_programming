@@ -1,8 +1,8 @@
 #include "lists.h"
 /**
- *
- *
- *
+ * sum_listint - returns sum of all data in a list
+ * @head: first element of a list
+ * Return: the addiotn of the data or 0 if empty
  *
  */
 
