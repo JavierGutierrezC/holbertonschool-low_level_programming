@@ -20,14 +20,14 @@ int main(void)
 			{
 				if (x < y && y < z)
 				{
-					_putchar(x);
-					_putchar(y);
-					_putchar(z);
+					putchar(x);
+					putchar(y);
+					putchar(z);
 
 					if (x != '7' || y != '8' || z != '9')
 
-					_putchar(',');
-					_putchar(' ');
+					putchar(',');
+					putchar(' ');
 
 				}
 
@@ -35,6 +35,6 @@ int main(void)
 		}
 
 	}
-	_putchar('\n')
-		return(0);
+	putchar('\n');
+	return(0);
 }
