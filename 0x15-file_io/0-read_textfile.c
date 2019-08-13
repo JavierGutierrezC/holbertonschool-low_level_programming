@@ -10,7 +10,7 @@
  * read_textfile - Reads and prints afile to the POSIX std output
  * @filename: Name of the file to print
  * @letters: number of letters to read and print
- * @Return: The number of letters
+ * Return: The number of letters
  *
  */
 ssize_t read_textfile(const char *filename, size_t letters)
