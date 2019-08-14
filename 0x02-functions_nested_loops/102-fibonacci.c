@@ -11,7 +11,7 @@ int main(void)
 
 	nom1 = 0;
 	nom2 = 1;
-	for (compt = 0; compt < 49; compt++)
+	for (compt = 0; compt < 50; compt++)
 	{
 		add = nom1 + nom2;
 		nom1 = nom2;
