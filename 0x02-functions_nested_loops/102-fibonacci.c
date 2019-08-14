@@ -1,7 +1,7 @@
 #incude "holberton.h"
 #include <stdio.h>
 /**
- * main _ print first 50 fibonachi numbers
+ * main - print first 50 fibonachi numbers
  * Return: Zero
  *
  */
