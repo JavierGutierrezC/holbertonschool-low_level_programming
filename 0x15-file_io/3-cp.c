@@ -40,7 +40,7 @@ int main(int argc, char *argv[])
 			exit(99); }}
 	if (close(ficho) == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: can't close fd %\n", ficho);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %\n", ficho);
 		exit(100); }
 	if (close(fichc) == -1)
 	{
