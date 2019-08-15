@@ -8,7 +8,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int ficho, fichc = 0, ecr = 0;
+	int ficho, fichc, ecr;
 	ssize_t count = 1024;
 	char buffer[1024];
 
@@ -40,11 +40,11 @@ int main(int argc, char *argv[])
 			exit(99); }}
 	if (close(ficho) == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %\n", ficho);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", ficho);
 		exit(100); }
 	if (close(fichc) == -1)
 	{
-		dfrintf(STDERR_FILENO, "Error: Can't close fd %d\n", fichc);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fichc);
 		exit(100); }
 	return (0);
 }
