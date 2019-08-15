@@ -11,7 +11,7 @@ int main(void)
 
 	for (x = 2; x < prime; x++)
 	{
-		if ((prime % x) == '0')
+		if ((prime % x) == 0)
 			prime = prime / x;
 	}
 	printf("%li\n", prime);
