@@ -31,12 +31,12 @@ int main(int argc, char *argv[])
 		count = read(ficho, buffer, 1024);
 		if (count == -1)
 		{
-			dprintf(STDERR_FILENO, "Error: can't read from file %s\n", argv[1]);
+			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 			exit(98); }
 		ecr = write(fichc, buffer, count);
 		if (ecr == -1)
 		{
-			dprintf(STDERR_FILENO, "Error: Cant write to %s\n", argv[2]);
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 			exit(99); }}
 	if (close(ficho) == -1)
 	{
