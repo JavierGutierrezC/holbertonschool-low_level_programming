@@ -22,7 +22,7 @@ char *cap_string(char *x)
 			if (x[str - 1] == figs[y])
 			{
 				if (x[str] >= 96 && x[str] <= 123)
-					x[str] = x[str] -32;
+					x[str] = x[str] - 32;
 			}
 		}
 	}
