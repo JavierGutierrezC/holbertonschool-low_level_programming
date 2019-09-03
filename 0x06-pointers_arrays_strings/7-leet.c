@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
  * leet - Encodes the array
- * @arr: Array to switch
+ * @arr: Array to change
  * Return: the array with the changes
  *
  */
