@@ -43,7 +43,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	}
 	for (z = 0; z <= x; z++)
 		flofy->name[z] = name[z];
-	for (w = 0; w <= y; y++)
+	for (w = 0; w <= y; w++)
 		flofy->owner[w] = owner[w];
 	return (flofy);
 }
