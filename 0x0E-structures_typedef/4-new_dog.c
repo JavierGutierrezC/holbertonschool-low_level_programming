@@ -19,7 +19,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	flofy = malloc(sizeof(dog_t));
 
-	if (flofy == '\0')
+	if (flofy == NULL)
 	{
 		return (NULL);
 	}
@@ -37,7 +37,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	flofy->owner = malloc(sizeof(char) * (y + 1));
 	if (flofy->owner == NULL)
 	{
-		free(name);
+		free(flofy->name);
 		free(flofy); /*free del mas pequeño al mas grande*/
 		return (NULL);
 	}
