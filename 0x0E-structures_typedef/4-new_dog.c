@@ -1,5 +1,6 @@
 #include "dog.h"
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * new_dog - creates new dog info
  * @name: name of new dog
@@ -40,4 +41,9 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(flofy); /*free del mas pequeño al mas grande*/
 		return (NULL);
 	}
-	for (z = 0; z <= flofy; z++)
+	for (z = 0; z <= x; z++)
+		flofy->name[z] = name[z];
+	for (w = 0; w <= y; y++)
+		flofy->owner[w] = owner[w];
+	return (flofy);
+}
