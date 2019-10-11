@@ -23,8 +23,8 @@ hash_table_t *hash_table_create(unsigned long int size)
 	new_ht->array = malloc(size * sizeof(hash_node_t *));
 	if (new_ht->array == NULL)
 	{
-
+		free(new_ht);
 		return (NULL);
 	}
-return (new_ht);
+	return (new_ht);
 }
