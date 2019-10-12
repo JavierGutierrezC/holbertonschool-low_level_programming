@@ -21,7 +21,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		return (0);
 	for (temp = ht->array[idx]; temp; temp = temp->next)
 	{
-		if (strcmp(tmp->key, key) == 0)
+		if (strcmp(temp->key, key) == 0)
 		{
 			free(temp->value);
 			temp->value = strdup(value);
