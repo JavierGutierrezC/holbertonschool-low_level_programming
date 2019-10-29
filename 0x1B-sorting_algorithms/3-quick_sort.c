@@ -2,8 +2,8 @@
 /**
  * partitionf - Quick sort using lomuto partition scheme.
  * @array: array to sort.
- * @lo: start point of index of the partition.
- * @hi: highest index of the partition.
+ * @low: start point of index of the partition.
+ * @high: highest index of the partition.
  * @size: size of the index
  * Return: index stores in variable i
  */
@@ -40,8 +40,8 @@ size_t partitionf(int *array, int low, int high, size_t size)
 /**
  * quicksort - Sort a partition of an array integer.
  * @array: array to sort.
- * @lo: index of the partition.
- * @hi: highest indes of the partition function sort.
+ * @low: first index of the partition.
+ * @high: last indes of the partition function sort.
  * @size: size of the array.
  */
 void quicksort(int *array, int low, int high, size_t size)
