@@ -1,41 +1,41 @@
 #include "sort.h"
 /**
- * partitionf - Partition for the quicksort using the implement the Lomuto.
+ * partitionf - Quick sort using lomuto partition scheme.
  * @array: array to sort.
- * @lo: Lowest index of the partition.
+ * @lo: start point of index of the partition.
  * @hi: highest index of the partition.
  * @size: size of the index
  * Return: index stores in variable i
  */
-size_t partitionf(int *array, int lo, int hi, size_t size)
+size_t partitionf(int *array, int low, int high, size_t size)
 {
-	int i, n;
-	int  swap, p;
+	int x, y;
+	int  swap, piv;
 
-	p = array[hi];
-	i = lo - 1;
-	for (n = lo; n < hi; n++)
+	piv = array[high];
+	x = low - 1;
+	for (y = low; y < high; y++)
 	{
-		if (array[n] < p)
+		if (array[y] < piv)
 		{
-			i++;
-			if (i != n)
+			x++;
+			if (x != y)
 			{
-				swap = array[i];
-				array[i] = array[n];
-				array[n] = swap;
+				swap = array[x];
+				array[x] = array[y];
+				array[y] = swap;
 				print_array(array, size);
 			}
 		}
 	}
-	if (array[hi] < array[i + 1])
+	if (array[high] < array[x + 1])
 	{
-		swap = array[i + 1];
-		array[i + 1] = array[hi];
-		array[hi] = swap;
+		swap = array[x + 1];
+		array[x + 1] = array[high];
+		array[high] = swap;
 		print_array(array, size);
 	}
-	return (i + 1);
+	return (x + 1);
 }
 /**
  * quicksort - Sort a partition of an array integer.
@@ -44,15 +44,15 @@ size_t partitionf(int *array, int lo, int hi, size_t size)
  * @hi: highest indes of the partition function sort.
  * @size: size of the array.
  */
-void quicksort(int *array, int lo, int hi, size_t size)
+void quicksort(int *array, int low, int high, size_t size)
 {
-	int p;
+	int piv;
 
-	if (lo < hi)
+	if (low < high)
 	{
-		p = partitionf(array, lo, hi, size);
-		quicksort(array, lo, p - 1, size);
-		quicksort(array, p + 1, hi, size);
+		piv = partitionf(array, low, high, size);
+		quicksort(array, low, piv - 1, size);
+		quicksort(array, piv + 1, high, size);
 	}
 }
 /**
