@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "search.h"
+#include "search_algos.h"
 size_t count(skiplist_t *list);
 /**
 * count - length of the list
